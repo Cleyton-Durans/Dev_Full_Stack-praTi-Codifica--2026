@@ -14,7 +14,7 @@
 Este curso é uma **iniciativa social e educacional** que visa **formar desenvolvedores Full Stack Junior** para suprir a demanda do mercado de TI. É uma parceria entre a **+praTI** (movimento de empresários de TI do RS) e a **Codifica** (EdTech especializada em ensino de tecnologia).
 
 ### **🎯 Objetivo**
-Proporcionar **formação gratuita e de qualidade** em desenvolvimento Full Stack, preparando profissionais para **solução de problemas computacionais**, **desenvolvimento de aplicações modernas** e **inserção no mercado de trabalho**.
+Proporcionar **formação de qualidade** em desenvolvimento Full Stack, preparando profissionais para **solução de problemas computacionais**, **desenvolvimento de aplicações modernas** e **inserção no mercado de trabalho**.
 
 ---
 
