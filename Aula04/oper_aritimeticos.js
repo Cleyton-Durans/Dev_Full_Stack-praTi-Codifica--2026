@@ -1,4 +1,5 @@
 console.log("Operadores aritméticos")
+console.log("_______________________________________")
 console.log("Soma 5 + 10: " + (5 + 10))
 console.log("Subtração 10 - 5: " + (10 - 5))
 console.log("Multiplicação 5 * 10 : " + (5 * 10))

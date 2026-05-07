@@ -1,6 +1,7 @@
 // Operadores Lógicos
 // && - e - and
 // || - ou - or
+
 console.log("Operadores Lógicos && - e - and || - ou - or")
 numero = 1
 let numero2 = "10"
