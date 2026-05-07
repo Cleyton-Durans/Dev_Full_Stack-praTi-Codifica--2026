@@ -1,0 +1,7 @@
+console.log("Operadores aritméticos")
+console.log("Soma 5 + 10: " + (5 + 10))
+console.log("Subtração 10 - 5: " + (10 - 5))
+console.log("Multiplicação 5 * 10 : " + (5 * 10))
+console.log("Divisão 10 / 5: " + (10 / 5))
+console.log("Resto 10 % 5: " + (10 % 5))
+console.log("Potencialção de 5 elevado a 4: " + 5 ** 4)
