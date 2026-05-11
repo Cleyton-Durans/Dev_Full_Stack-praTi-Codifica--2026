@@ -1,9 +1,9 @@
 // valores - 2 1 5 1 6 1
 let numeros = [2, 1, 5, 1, 6, 1]
 
-// Imprimindo os valores do vetor usando um laço de repetição
+// Imprimindo os valores do vetor usando um laço de repetição "< 5"
 for(let pos = 0; pos < 5; pos++){
-console.log("A posição " + pos + " contém o valor " + numeros[pos])
+console.log(`A posição ${pos} contém o valor ${numeros[pos]}`)
 }
 console.log("_______________________________")
 
@@ -13,3 +13,4 @@ for(let pos = 0; pos < numeros.length; pos++){
     console.log("A posição " + pos + " contém o valor " + numeros[pos])
     }
     console.log("_______________________________")
+
