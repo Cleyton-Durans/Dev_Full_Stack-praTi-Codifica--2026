@@ -1,0 +1,11 @@
+ 8. Exercícios Práticos Sugeridos
+
+Crie um objeto livro com propriedades: titulo, autor, ano, genero (array de gêneros).
+
+Adicione um método descricao() que retorne uma string com todas as informações do livro.
+
+Crie um array biblioteca com 3 objetos livro e percorra-o para imprimir a descrição de cada livro.
+
+Use Object.entries() para listar todas as propriedades e valores de um objeto.
+
+Atualize uma propriedade de um objeto dentro de um array usando this em um método.
