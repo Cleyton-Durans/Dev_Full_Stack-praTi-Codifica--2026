@@ -3,3 +3,16 @@
 adolescente, adulto, idoso) com base no valor fornecido, utilizando uma estrutura de
 controle if-else.
  */
+
+let prompt = require('prompt-sync')()
+
+let idade = parseInt(prompt("Digite a idade da pessoa:"))
+if (idade >= 0 && idade <= 12) {
+    console.log("A pessoa é uma criança.")
+} else if (idade >= 13 && idade <= 17) {
+    console.log("A pessoa é um adolescente.")
+} else if (idade >= 18 && idade <= 59) {
+    console.log("A pessoa é um adulto.")
+} else {
+    console.log("A pessoa é um idoso.")
+}
