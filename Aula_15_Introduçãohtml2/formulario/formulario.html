@@ -12,33 +12,6 @@
     <title>Formulário</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Estilos adicionais podem ser definidos aqui */
-
-    :root {
-    --cor-fundo: #e4d5d5;
-    --cor-primaria: #3498db;
-    --cor-secundaria: #2ecc71;
-    --cor-texto: #333333;
-    --cor-accento: #e74c3c;
-    --cor-fundo-formulario: #ffffff;
-    }
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body {
-        background-color: var(--cor-fundo);
-        font-family: Poppins, sans-serif;
-        color: hsl(from var(--cor-texto) h s l);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    /*
-    <style>
         * {
             margin: 0;
             padding: 0;
@@ -151,9 +124,6 @@
             background-color: #0056b3;
         }
     </style>
-    */
-    
-    </style>
 
 </head>
 <body>
@@ -218,5 +188,25 @@
             </form>
         </div>
     </div>
+
+    <script>
+        function showForm(formId) {
+            // Remover a classe 'active' de todos os formulários
+            const forms = document.getElementsByClassName('formulario');
+            forms.forEach(form => form.classList.remove('active'));
+            document.getElementById(formId).classList.add('active');
+        }
+        const tabs = document.getElementsByClassName('tab');
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // Adicionar a classe 'active' ao botão clicado
+        document.getElementById(formId).classList.add('active');
+
+        // Adicionar a classe 'active' ao botão clicado
+        document.getElementById(formId).classList.add('active');
+
+    </script>
 </body>
 </html>
