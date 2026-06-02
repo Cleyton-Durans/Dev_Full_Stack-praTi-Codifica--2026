@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Fim Google Fonts -->
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionais podem ser definidos aqui */
+
+    :root {
+    --cor-fundo: #e4d5d5;
+    --cor-primaria: #3498db;
+    --cor-secundaria: #2ecc71;
+    --cor-texto: #333333;
+    --cor-accento: #e74c3c;
+    --cor-fundo-formulario: #ffffff;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: var(--cor-fundo);
+        font-family: Poppins, sans-serif;
+        color: hsl(from var(--cor-texto) h s l);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    /*
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+            gap: 10px;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .tab.active {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .tab:hover:not(.active) {
+            background-color: #d0d0d0;
+        }
+
+        .formulario {
+            display: none;
+        }
+
+        .formulario.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    */
+    
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1> Formulário </h1>
+
+        <div class="tabs">
+            <button id="cadastro" class="tab active" onclick="showForm('cadastro')">Cadastro</button>
+            <button id="login" class="tab" onclick="showForm('login')">Login</button>
+        </div>
+        
+        <div class="cadastro" class="formulario active">
+            <form action="#">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+                </div>  
+                <div class="form-group"> 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="confirmar-senha">Confirmar Senha:</label>
+                    <input type="password" maxlength="20" minlength="6" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required ><br><br>
+                </div>
+                <div class="form-group">    
+                    <label for="termos">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        Aceito os termos e condições
+                    </label><br><br>
+                </div>
+                <div class="form-group">
+                    <label for="linguagens">Linguagens de Programação:</label><br>
+                    <input type="checkbox" id="linguagens" name="linguagens" value="html">
+                    <label for="linguagens">HTML</label><br>
+                    <input type="checkbox" id="linguagens" name="linguagens" value="css">
+                    <label for="linguagens">CSS</label><br>
+                    <input type="checkbox" id="linguagens" name="linguagens" value="javascript">
+                    <label for="linguagens">JavaScript</label><br>
+                </div>
+
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div class="login">
+            <form action="#">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
