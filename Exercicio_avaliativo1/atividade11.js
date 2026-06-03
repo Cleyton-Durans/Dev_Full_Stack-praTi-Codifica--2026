@@ -7,7 +7,7 @@ function lerDados() {
    
     let nomes = [];
     let idades = [];
-    let maiorDeIdade = []
+    let menorDeIdade = []
 
     for (let i = 0; i < 2; i++) {
         let nomePessoa = prompt(`Digite o nome da pessoa ${i + 1}: `)
@@ -16,8 +16,9 @@ function lerDados() {
         nomes.push(nomePessoa)
         idades.push(idadePessoa)
 
-        if (idades > 18 ) {
-            maiorDeIdade.push(nomePessoa)
+        if (idades < 18 ) {
+            menosDeIdade.push(nomePessoa)
+            menosDeIdade.push(idadePessoa)
         }
     }
 
