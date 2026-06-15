@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Essa meta tag serve para compatibilidade com dispositivos móveis -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Essa meta tag serve para compatibilidade com navegadores antigos -->
+    <title> Flex Box </title>
+    
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: ysabeau, sans-serif;
+        }
+
+        .h2 {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1;
+        }
+
+        /* .container*/
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        /* .container2*/ -->
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container3 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .caixa {
+            background-color: aqua;
+            padding: 30px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .imagem {
+            background-color: blueviolet;
+            padding: 30px;
+            margin: 10px;
+            border-radius: 10px;
+        }   
+    </style>
+</head>
+<body>
+    <main>
+        <h2> Estrutura do Flex Box </h2>
+    </main>
+    <div class="container">
+        <div class="caixa"> Caixa 1 
+            <div class="imagem"> Imagem da linguagem HTML 
+
+            </div>
+        </div>
+        <div class="caixa"> Caixa 2
+            <div class="imagem"> Imagem da linguagem CSS 
+
+            </div>
+        </div>
+        <div class="caixa"> Caixa 3 
+            <div class="imagem"> Imagem da linguagem JS 
+
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="container2">
+        <div class="caixa"> Caixa 1 
+            <div class="imagem"> Imagem da linguagem HTML 
+
+            </div>
+        </div>
+        <div class="caixa"> Caixa 2
+            <div class="imagem"> Imagem da linguagem CSS 
+
+            </div>
+        </div>
+        <div class="caixa"> Caixa 3 
+            <div class="imagem"> Imagem da linguagem JS 
+
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="container3">
+        <div class="caixa"> Caixa 1 
+            <div class="imagem"> Imagem da linguagem HTML 
+
+            </div>
+        </div>
+        <div class="caixa"> Caixa 2
+            <div class="imagem"> Imagem da linguagem CSS 
+
+            </div>
+        </div>
+        <div class="caixa"> Caixa 3 
+            <div class="imagem"> Imagem da linguagem JS 
+
+            </div>
+        </div>
+    </div>
+    <hr/>
+
+    
+</body>
+</html>
