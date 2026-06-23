@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='PT-BR'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>DOM</title>
+</head>
+<body>
+    <h1> Introdução ao DOM </h1>
+    <p> aprendendo a usar DOM em JavaScript </p>
+    <p> Aqui vai mudar o parágrafo </p>
+
+    <h1 id="titulo"> Desenvolvidor <strong>Full Stack</strong></p>
+    <h3 class="subtitulo"> Outro Título Principal</h3>
+
+    
+    <script>
+        
+        let paragrafo = document.getElementsByTagName('p')[1];
+
+        paragrafo.innerText = "Aqui alterado pelo JavaScript";
+        paragrafo.style.color = "red";
+
+        let titulo = document.getElementById('titulo');
+        titulo.style.color = "blue";
+
+        titulo.innerHTML = "Desenvolvidor <strong>Front End </strong>"
+    
+        //Atualizando informações do subtitulo
+        let subtitulo = document.querySelector('.subtitulo');
+        subtitulo.innerText = "Outro Título Principal Atualizado";
+        subtitulo.style.color = "green";
+
+    </script>
+    
+</body>
+</html>

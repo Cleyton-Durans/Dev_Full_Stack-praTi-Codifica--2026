@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman lança o Batpapo - Clarim Diário</title>
+    <link rel="stylesheet" href="materia.css">
+</head>
+<body>
+    <!-- Header com logo e navegação -->
+    <header class="cabecalho">
+        <a href="#" class="logo">Clarim Diário</a>
+        <nav class="navegacao">
+            <a href="#">Política</a>
+            <a href="#">Economia</a>
+            <a href="#">Esportes</a>
+            <a href="#">Homem-Aranha</a>
+        </nav>
+    </header>
+
+    <!-- Trilha de navegação (breadcrumb) -->
+    <nav class="trilha">
+        <a href="index.html">Início</a>
+        <span>/</span>
+        <a href="#">Política</a>
+        <span>/</span>
+        <span class="atual">Batman Lança o BatePapo</span>
+    </nav>
+
+    <!-- Conteúdo principal: matéria + aside -->
+    <div class="conteudo">
+        <article class="materia">
+            <!-- Categoria, título, linha fina, autor, texto, tags -->
+            <span class="categoria">Política</span>
+            <h1>Bruce Wayne é Visto Bêbado no Jantar da Casa Branca</h1>
+            <p class="linha-fina">Bruce foi encontrado alucinando dizendo que tinha medo de morcegos.</p>
+
+            <div class="autor">
+                <div class="avatar">BG</div>
+                <div>
+                    <strong>Bárbara Gordon</strong>
+                    <span class="data">18 de junho de 2026 - 8 min de leitura</span>
+                </div>
+                <div class="compartilhar">
+                    <button>Compartilhar</button>
+                    <button>Salvar</button>
+                </div>
+            </div>
+
+            <figure class="imagem-destaque">
+                <img src="batman.jpeg" alt="Homens Fugindo Fantasiados">
+                <figcaption>Batman e Robin fogem da polícia</figcaption>
+            </figure>
+
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet...</p>
+                <blockquote>"Por trás de uma Máscara Existe um Homem de Verdade"</blockquote>
+                <h2>Neste Dia, Coringa Nem Passou Maquiagem</h2>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+
+            <div class="tags">
+                <a href="#">Heróis</a>
+                <a href="#">Justiça</a>
+                <a href="#">Vingança</a>
+                <a href="#">Cachaça</a>
+            </div>
+        </article>
+
+        <!-- Aside: Menu lateral -->
+        <aside class="menu-lateral">
+            <div class="caixa">
+                <h3>Mais lidas</h3>
+                <ol>
+                    <li>Robin Rouba Novamente o BatCarro</li>
+                    <li>Peter Parker é o Novo Fotógrafo do Clarim</li>
+                    <li>IA Substitui Programadores pela Segunda Vez esta Semana</li>
+                    <li>Chuva Caí Molhada Mais uma Vez em Não-me-toque</li>
+                </ol>
+            </div>
+            <div class="caixa-newsletter">
+                <h3>Receba as notícias</h3>
+                <p>Assine nosso boletim diário.</p>
+                <input type="email" placeholder="seu@email.com">
+                <button>Assinar</button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Seções adicionais -->
+    <section class="relacionados"></section>
+    <footer class="rodape"></footer>
+</body>
+</html>
