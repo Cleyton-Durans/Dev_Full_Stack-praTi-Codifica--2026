@@ -31,6 +31,23 @@ function App() {
     seTodos(todos.map(todo => todo.id === id ? { ...todo, feito: !todo.feito } : todo));
   }
 
+  /* Função para deletar uma tarefa */
+  const deleteTodo = (id) => {
+    seTodos(todos.filter(todo => todo.id !== id));
+  }
+
+  /* Função para adicionar uma tarefa */
+ const addTodo = (text, categoria) => {
+  const newTodo = {
+    id: todos.length + 1,
+    text: text,
+    categoria: categoria,
+    feito: false
+  }
+  seTodos([...todos, newTodo]);
+ }
+  
+
   // Retorna a estrutura JSX que será renderizada na tela.
   return (
     // Div principal com estilos inline para padding e alinhamento de texto.
@@ -48,10 +65,15 @@ function App() {
               <p>{todo.text} | {todo.categoria} | {todo.feito ? '✅' : '❌'} <input type="checkbox" checked={todo.feito} onChange={() => concluirtarefa(todo.id)} /></p>
             </div>
             {/* Botões para excluir e editar a tarefa (ainda não implementados) */}
-            <button>Excluir</button>
-            <button>Editar</button>
+            <button onClick={() => deleteTodo(todo.id)} style={{ marginLeft: '10px' }}>Excluir</button>
           </div>
         ))}
+      </div>
+      <div className="form" style={{ padding: '50px', marginTop: 'px', gap: '10px', display: 'flex', flexDirection: 'column' }}>
+        <input type="text" placeholder="Adicionar Tarefa" />
+        <input type="text" placeholder="Adicionar Texto" />
+        <input type="text" placeholder="Adicionar Categoria" />
+        <button onClick={() => addTodo('tarefa', 'text', 'categoria')}>Adicionar</button>
       </div>
     </div>
   );
