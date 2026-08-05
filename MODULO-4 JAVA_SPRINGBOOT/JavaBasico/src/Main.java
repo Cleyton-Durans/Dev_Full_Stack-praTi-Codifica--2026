@@ -32,5 +32,21 @@ public class Main {
     System.out.println(nome.length());
     System.out.println(nome.toUpperCase());
     System.out.println(nome.toLowerCase());
+
+    System.out.println("__________________________");
+
+    String a = "Java";
+    String b = "Java";
+    String C = new String("Java");
+
+    Integer teste = 10;
+
+    System.out.println( a == b );
+    System.out.println( a == C );
+    System.out.println(a.equals(C));
+
+
+    final double TAXA_JUROS = 0.5; // Faz com que torna uma constante inalterável
+
     }
 }
