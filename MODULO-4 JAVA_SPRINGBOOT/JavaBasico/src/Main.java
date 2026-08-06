@@ -48,5 +48,8 @@ public class Main {
 
     final double TAXA_JUROS = 0.5; // Faz com que torna uma constante inalterável
 
+        System.out.println("__________________________");
+
+
     }
 }
