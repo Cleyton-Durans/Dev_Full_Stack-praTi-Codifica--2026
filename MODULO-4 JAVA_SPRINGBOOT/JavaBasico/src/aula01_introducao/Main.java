@@ -1,3 +1,5 @@
+package aula01_introducao;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello Wold! Welcome to Java!");
@@ -41,7 +43,7 @@ public class Main {
 
     Integer teste = 10;
 
-    System.out.println( a == b );
+    System. out.println( a == b );
     System.out.println( a == C );
     System.out.println(a.equals(C));
 
