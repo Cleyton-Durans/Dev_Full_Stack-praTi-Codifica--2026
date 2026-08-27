@@ -14,5 +14,4 @@ public interface Exportavel {
      * @return representacao exportada
      */
     String exportar(String formato);
-}{
-}
+};

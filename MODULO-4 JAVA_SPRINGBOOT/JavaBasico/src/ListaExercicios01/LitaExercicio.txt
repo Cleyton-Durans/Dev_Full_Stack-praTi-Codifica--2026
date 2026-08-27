@@ -1,9 +1,17 @@
 1. Leia um número fixo no código e diga se é par ou ímpar usando `if`.
+
 2. Usando `switch` como expressão, converta um número de 1 a 7 no nome do dia da semana.
+
 3. Imprima os números de 1 a 100 que sejam múltiplos de 3 e de 5, usando `for`.
+
 4. Calcule o fatorial de 10 usando `while`.
+
 5. Crie um array com 10 inteiros e imprima apenas os que estão em posições pares.
+
 6. Some todos os elementos de um array de `int` e imprima o total e a média.
+
 7. Encontre o maior e o menor valor de um array e informe também em qual índice cada um está.
+
 8. Crie uma matriz 3x3, preencha-a e imprima formatada em linhas e colunas.
+
 9. Calcule a soma de cada linha e de cada coluna de uma matriz 4x4.
